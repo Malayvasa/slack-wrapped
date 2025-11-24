@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Slack Wrapped
+
+A beautiful, Slack-themed single-page website showcasing your Slack workspace metrics and statistics.
+
+## Features
+
+- 📊 **Total Messages Sent** - Track all messages across your workspace
+- 😊 **Total Emoji Reactions** - See total reactions given
+- 👤 **Most Active Member** - Identify your most engaged team member
+- 📢 **Most Active Channel** - Find your busiest channel
+- 🔥 **Most Popular Post** - Discover the post with the most engagement (replies + reactions)
+
+## Design
+
+The website mimics Slack's channel interface with:
+- Slack's signature purple color scheme (#350D36, #1A1D21)
+- Mobile-optimized responsive design
+- Clean, modern UI matching Slack's aesthetic
+- Smooth hover effects and transitions
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+slack-wrapped/
+├── app/
+│   ├── layout.tsx      # Root layout with metadata
+│   ├── page.tsx        # Main page component
+│   └── globals.css     # Global styles
+├── components/
+│   ├── MetricCard.tsx  # Reusable metric card component
+│   ├── MemberCard.tsx  # Most active member display
+│   ├── ChannelCard.tsx # Most active channel display
+│   └── PostCard.tsx    # Most popular post display
+├── data/
+│   └── mockData.ts     # Mock data for demonstration
+└── types/
+    └── index.ts        # TypeScript type definitions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To use your own Slack data:
 
-## Deploy on Vercel
+1. Replace the mock data in `data/mockData.ts` with your actual metrics
+2. Or integrate with the Slack API to fetch real-time data
+3. Update the `SlackMetrics` interface in `types/index.ts` if needed
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js 16** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **React 19** - UI library
+
+## License
+
+MIT
