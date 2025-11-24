@@ -10,14 +10,18 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#1A1D21] text-white">
       {/* Header - mimicking Slack sidebar */}
-      <header className="bg-[#350D36] border-b border-[#522653] sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <header className="bg-[#350D36] border-b border-[#522653] sticky top-0 z-10 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-              <span className="text-[#350D36] font-bold text-lg">S</span>
+            <div className="w-8 h-8 flex items-center justify-center">
+              <img 
+                src="/slack-logo.svg" 
+                alt="Slack" 
+                className="w-6 h-6"
+              />
             </div>
-            <h1 className="text-xl font-bold text-white">Slack Wrapped</h1>
-            <span className="text-[#9E9EA0] text-sm ml-auto">Week Summary</span>
+            <h1 className="text-[15px] font-semibold text-white tracking-tight">Slack Wrapped</h1>
+            <span className="text-[#9E9EA0] text-[13px] ml-auto font-normal">Week Summary</span>
           </div>
         </div>
       </header>
@@ -25,11 +29,11 @@ export default function Home() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Title Section */}
-        <div className="mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+        <div className="mb-6">
+          <h2 className="text-[28px] md:text-[32px] font-bold text-white mb-1 leading-tight tracking-tight">
             Your Workspace Stats
           </h2>
-          <p className="text-[#9E9EA0] text-sm md:text-base">
+          <p className="text-[#9E9EA0] text-[15px] font-normal">
             A week in review • {new Date().toLocaleDateString('en-US', { 
               month: 'long', 
               day: 'numeric', 
@@ -82,8 +86,8 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="text-center py-8 border-t border-[#522653]">
-          <p className="text-[#9E9EA0] text-sm">
+        <footer className="text-center py-6 border-t border-[#3D3E42]">
+          <p className="text-[#9E9EA0] text-[13px] font-normal">
             Generated with ❤️ using Next.js
           </p>
         </footer>
