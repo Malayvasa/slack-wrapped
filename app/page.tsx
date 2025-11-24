@@ -87,9 +87,16 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="text-center py-6 border-t border-[#3D3E42]">
-          <p className="text-[#9E9EA0] text-[13px] font-normal">
-            Generated with ❤️ using Next.js
-          </p>
+          <div className="flex items-center justify-center gap-2">
+            <p className="text-[#9E9EA0] text-[13px] font-normal">
+              Built with
+            </p>
+            <img 
+              src="/rube-logo.svg" 
+              alt="Rube" 
+              className="h-4 opacity-90 hover:opacity-100 transition-opacity"
+            />
+          </div>
         </footer>
       </main>
     </div>
