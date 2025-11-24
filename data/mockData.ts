@@ -6,6 +6,7 @@ export const mockMetrics: SlackMetrics = {
   mostActiveMember: {
     name: 'Lingala',
     messageCount: 46,
+    avatar: 'https://avatars.slack-edge.com/2025-03-17/8614645842754_b5e7b4405ded6d39cdb5_192.jpg',
   },
   mostActiveChannel: {
     name: '#internal-glean',
