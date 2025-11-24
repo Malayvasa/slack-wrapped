@@ -1,24 +1,25 @@
 import { SlackMetrics } from '@/types';
 
 export const mockMetrics: SlackMetrics = {
-  totalMessages: 217,
-  totalEmojiReactions: 41,
+  totalMessages: 228,
+  totalEmojiReactions: 36,
   mostActiveMember: {
     name: 'Lingala',
-    messageCount: 42,
-    avatar: 'https://avatars.slack-edge.com/2025-03-17/8614645842754_b5e7b4405ded6d39cdb5_192.jpg',
+    messageCount: 43,
+    avatar: '',
   },
   mostActiveChannel: {
-    name: '#internal-glean',
-    messageCount: 34,
+    name: '#pod-platform',
+    messageCount: 25,
   },
   mostPopularPost: {
-    text: 'Can we take master to prod?\n<@U06BF23F1T5|Himanshu> <@U08JJGWGULE|dhawal> <@U08NVJC15GF|Srujan>\n<https://github.com/ComposioHQ/hermes/pull/7111>',
-    author: 'Lingala',
-    channel: '#pod-platform',
+    text: 'can someone switch on bugbot for mercury? cc: <@U08FHET2FQE|Jitesh>',
+    author: 'Samvit',
+    authorAvatar: '',
+    channel: '#help',
     timestamp: '2025-11-24T00:00:00Z',
-    reactions: 3,
-    replies: 6,
-    totalEngagement: 9,
+    reactions: 0,
+    replies: 3,
+    totalEngagement: 3,
   },
 };
