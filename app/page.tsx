@@ -31,7 +31,7 @@ export default function Home() {
         {/* Title Section */}
         <div className="mb-6">
           <h2 className="text-[28px] md:text-[32px] font-bold text-white mb-1 leading-tight tracking-tight">
-            Your Workspace Stats
+            Composio Workspace Stats
           </h2>
           <p className="text-[#9E9EA0] text-[15px] font-normal">
             A week in review • {new Date().toLocaleDateString('en-US', { 
@@ -87,7 +87,12 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="text-center py-6 border-t border-[#3D3E42]">
-          <div className="flex items-center justify-center gap-2">
+          <a 
+            href="https://rube.app/recipes/20e81e10-c50b-4e74-bd94-39578545c79c" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 hover:opacity-80 transition-opacity"
+          >
             <p className="text-[#9E9EA0] text-[13px] font-normal">
               Built with
             </p>
@@ -96,7 +101,7 @@ export default function Home() {
               alt="Rube" 
               className="h-4 opacity-90 hover:opacity-100 transition-opacity"
             />
-          </div>
+          </a>
         </footer>
       </main>
     </div>
